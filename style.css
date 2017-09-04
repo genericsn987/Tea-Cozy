@@ -4,6 +4,12 @@ body {
     color: seashell;
     background-color: black;
     opacity: 0.9;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
 }
 
 /* Start Universal Flex Classes */
@@ -101,3 +107,22 @@ header {
 }
 
 /* End Tea of the Month Section */
+
+/* Start Locations Section */
+
+#locations {
+    height: 500px;
+    background-image: url(images/img-locations-background.jpg);
+}
+
+.storeAddress {
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* End Locations Section */
