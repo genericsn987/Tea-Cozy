@@ -4,5 +4,47 @@ body {
     color: seashell;
     background-color: black;
     opacity: 0.9;
-    text-align: center;
 }
+
+/* Start Navigation */
+
+/* I tried this code but it didn't render the three as flex. Maybe someone can tell me what I'm doing wrong or why it doesn't
+
+    header, .logo, .navLinks {
+    display:flex;
+    }
+*/
+
+header {
+    display: flex;
+    height:69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    z-index: 1;
+    background: black;
+    width:100%;
+    top:0;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo img {
+    height:50px;
+}
+
+.navLinks {
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.navLinks a {
+    padding:15px;
+    color: white;
+}
+/* End Navigation */
