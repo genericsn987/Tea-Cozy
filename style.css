@@ -6,6 +6,16 @@ body {
     opacity: 0.9;
 }
 
+/* Start Universal Flex Classes */
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* End Universal Flex Classes
+
 /* Start Navigation */
 
 /* I tried this code but it didn't render the three as flex. Maybe someone can tell me what I'm doing wrong or why it doesn't
@@ -23,12 +33,14 @@ header {
     z-index: 1;
     background: black;
     width:100%;
-    top:0;
+    top:0; /* The nav wasn't fixing to the top, there was a gap between the top of the browser screen and where the nav started */
+    left: 0; /* I added this because without it there is a gap of 8 on the left for some reason. */
 }
+
 
 .logo {
     display: flex;
-    margin-left: 10px;
+    padding-left: 10px;
     align-items: center;
     flex-grow: 1;
 }
@@ -40,11 +52,52 @@ header {
 .navLinks {
     display:flex;
     align-items: center;
-    margin-right: 10px;
+    flex-wrap: wrap;
 }
 
 .navLinks a {
-    padding:15px;
+    padding:20px 10px;
     color: white;
 }
 /* End Navigation */
+
+/* Start Mission Section */
+
+.mission {
+    height: 700px;
+    background-image: url(images/img-mission-background.jpg);
+    margin-top: 70px;
+}
+
+/* End Mission Section */
+
+/* Start Tea of the Month Section */
+
+.teaMonth img{
+    height: 200px;
+    width: 300px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.teas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items {
+    padding: 10px;
+}
+
+.items span {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* End Tea of the Month Section */
