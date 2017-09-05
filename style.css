@@ -1,18 +1,26 @@
+/*  Start Universal */
+
 body {
-    font-family: Helvetica;
-    font-size: 22px;
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
+    font-size: 22px;
     text-align: center;
+    opacity: 0.9;
 }
 
 h2, h3, h4 {
     margin: 0;
     padding: 10px;
+    color: seashell;
+    opacity: 0.9;
 }
 
-/* Start Universal Flex Classes */
+a {
+    padding:20px 10px;
+    color: seashell;
+}
 
 .flexContainer {
     display: flex;
@@ -20,16 +28,11 @@ h2, h3, h4 {
     flex-wrap: wrap;
 }
 
-/* End Universal Flex Classes
+
+
+/* End Universal */
 
 /* Start Navigation */
-
-/* I tried this code but it didn't render the three as flex. Maybe someone can tell me what I'm doing wrong or why it doesn't
-
-    header, .logo, .navLinks {
-    display:flex;
-    }
-*/
 
 header {
     display: flex;
@@ -60,26 +63,35 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
-
-.navLinks a {
-    padding:20px 10px;
-    color: white;
-}
 /* End Navigation */
 
 /* Start Mission Section */
 
-.mission {
+#mission {
     height: 700px;
     background-image: url(images/img-mission-background.jpg);
     margin-top: 70px;
+}
+
+.content {
+    margin: auto;
+    background-color: black;
+    width: 100%;
 }
 
 /* End Mission Section */
 
 /* Start Tea of the Month Section */
 
-.teaMonth img{
+#teaMonth {
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#teaMonth img{
     height: 200px;
     width: 300px;
 }
@@ -113,6 +125,7 @@ header {
 #locations {
     height: 500px;
     background-image: url(images/img-locations-background.jpg);
+    padding-top: 70px;
 }
 
 .storeAddress {
@@ -126,3 +139,23 @@ header {
     justify-content: center;
 }
 /* End Locations Section */
+
+/* Start Contact Section */
+
+#contact {
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* End Contact Section */
+
+/* Start Copyright Section */
+
+footer {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+/* End Copyright Section */
